@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
+.header-navbar {
+  background-color: #000000ca !important;
+  color: white !important;
+}
+.text-white a {
+  color: #848895;
+}
+.header {
+  background-color: #0047ff;
+  color: black;
+  display: flex;
+  justify-content: center;
+  height: 37px;
+  align-items: center;
+}
+.main-page-contant {
+  text-align: center;
+  /* color: white; */
+  /* background-image: url(../app/images/solanaimage1.png); */
+
+  padding-top: 50px;
+}
+.main-page-background {
+  background-color: black;
+  color: white;
+}
+.main-page-contant p {
+  font-size: 21px;
+}
+.main-page-contant h6 {
+  font-size: 68px;
+  font-weight: 300;
+}
+.main-page-button {
+  text-align: center;
+  padding: 100px 0;
+}
+.start-button {
+  padding: 20px;
+  border-radius: 36px;
+  background-color: #8c01fa;
+  color: white;
+  border: unset;
+}
+.read-button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 20px;
+  border-radius: 36px;
+}
+.tools-heading {
+  text-align: center;
+}
+.tools-heading p {
+  color: #618adc;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-patner {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.millions h3 {
+  font-size: 38px;
+  font-weight: 300;
+}
+.millions h1 {
+  font-size: 101px;
+  font-weight: 400;
+}
+.millions {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+.mass-section p {
+  color: #c4c4c4;
+}
+.environment {
+  color: #19fb9b;
+}
+.mass-section {
+  background-image: url(../app/images/mass-section-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.payment-mode {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+.payment-mode button {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  border: unset;
+  color: white;
+}
+.emoji {
+  display: flex;
+  justify-content: space-around;
+  background-color: hsl(300, 10%, 14%);
+  padding: 10px;
+  align-items: center;
+  margin-top: 20px !important;
+}
+.more-about {
+  color: #a962ff;
+  font-size: 20px;
+}
+.footer-contant {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+}
+.join-line {
+  background-color: black;
+  padding: 50px 0;
+}
+.join-line p {
+  font-size: 30px;
+}
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
