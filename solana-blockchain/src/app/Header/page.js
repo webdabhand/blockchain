@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { Container, Row, Col } from "react-bootstrap";
 import logo from "../images/solanaimage3.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Link from "next/link";
 const page = () => {
   return (
     <div>
@@ -40,9 +39,9 @@ const page = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" href="/Build">
                     Build
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item dropdown">

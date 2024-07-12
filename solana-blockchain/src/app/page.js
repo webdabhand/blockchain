@@ -13,6 +13,15 @@ import emoji1 from "../app/images/emoji1.png";
 import emoji2 from "../app/images/emoji2.png";
 import emoji3 from "../app/images/emoji3.png";
 import anybody from "../app/images/anybodies.png";
+import frame from "../app/images/Frame.png";
+import frame1 from "../app/images/Frame1.png";
+import frame2 from "../app/images/Frame2.png";
+import frame3 from "../app/images/Frame3.png";
+import frame4 from "../app/images/Frame4.png";
+import frame5 from "../app/images/Frame5.png";
+import frame6 from "../app/images/Frame6.png";
+import frame7 from "../app/images/Frame7.png";
+
 export default function Home() {
   return (
     <div className="main-page-background">
@@ -158,6 +167,50 @@ export default function Home() {
         <div className="join-line">
           <p>Join a thriving community</p>
         </div>
+      </Container>
+
+      <div className="community">
+        <div>
+          <div>
+            <Image src={frame} alt="/" />
+          </div>
+          <div>
+            <Image src={frame1} alt="/" />
+          </div>
+        </div>
+        <div>
+          <Image src={frame2} alt="/" />
+        </div>
+        <div>
+          <div>
+            <Image src={frame3} alt="/" />
+          </div>
+          <div>
+            <Image src={frame4} alt="/" />
+          </div>
+        </div>
+        <div>
+          <Image src={frame5} alt="/" />
+        </div>
+        <div>
+          <div>
+            <Image src={frame6} alt="/" />
+          </div>
+          <div>
+            <Image src={frame7} alt="/" />
+          </div>
+        </div>
+      </div>
+      <Container>
+        <Row>
+          <Col className="start-building">
+            <h1>
+              It's time to join the thousands of creators, <br />
+              Artists, and developers using solana.
+            </h1>
+            <button>START BUILDING</button>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
