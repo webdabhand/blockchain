@@ -225,3 +225,29 @@ body {
   display: flex;
   justify-content: center;
 }
+.build-docs {
+  padding: 80px 0;
+}
+.build-docs button {
+  padding: 0 30px;
+  border-radius: 40px;
+  background-color: unset;
+  color: white;
+  border: 1px solid gray;
+}
+.build-solana-docs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 25px 0;
+}
+.change-log button {
+  padding: 0 20px;
+  background-color: unset;
+  color: white;
+  border-radius: 40px;
+  border: 1px solid gray;
+}
+.change-log {
+  padding: 50px 0;
+}
