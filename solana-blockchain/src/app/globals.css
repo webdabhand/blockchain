@@ -214,19 +214,24 @@ body {
 .build-now {
   background-color: #14f195;
 }
-.card {
+.edit-card {
   /* background-image: url(../app/images/design.png); */
-  /* height: 320px;
-  width: 346px; */
+  height: 250px !important;
+  width: 346px;
   border-radius: 18px;
-  background-color: #19161c;
+  background-color: #19161c !important;
+  color: white !important;
 }
 .card-title {
   display: flex;
   justify-content: center;
 }
+.card-title {
+  padding: 20px 0;
+}
 .build-docs {
   padding: 80px 0;
+  justify-content: center;
 }
 .build-docs button {
   padding: 0 30px;
@@ -250,4 +255,85 @@ body {
 }
 .change-log {
   padding: 50px 0;
+  justify-content: center;
+}
+.btnn-primary {
+  font-size: 11px;
+}
+.card-titles {
+  color: #9945ff;
+  font-size: 12px;
+}
+.social-button button {
+  padding: 5px 40px;
+  border-radius: 30px;
+  border: 1px solid gray;
+  background-color: unset;
+  color: white;
+}
+.email-edit input {
+  background-color: unset;
+  color: white !important;
+}
+
+.resources {
+  justify-content: center;
+  gap: 80px;
+}
+.view-all-section {
+  width: 45% !important;
+}
+.get-started P {
+  color: gray;
+}
+.backgroundimg img {
+  width: 100%;
+}
+
+.buildspacee {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* .buildspace-three button {
+  padding: 0 10px;
+  border-radius: 40px;
+  border: unset;
+  background-color: #8c01fa;
+  color: white;
+  font-size: 11px;
+}
+.buildspace-three p {
+  font-size: 28px;
+  font-weight: 200;
+} */
+.chapter-buildspacce {
+  position: relative;
+}
+.chapter-buildspacce-text {
+  position: absolute;
+  bottom: 30px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  align-items: center;
+}
+.chapter-buildspacce-text button {
+  padding: 0 10px;
+  border-radius: 40px;
+  border: unset;
+  background-color: #8c01fa;
+  color: white;
+  font-size: 11px;
+}
+.chapter-buildspacce-text p {
+  font-size: 18px;
+  font-weight: 200;
+}
+.background-three {
+  padding-top: 15px;
 }

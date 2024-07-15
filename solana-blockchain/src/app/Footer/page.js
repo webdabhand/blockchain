@@ -16,7 +16,6 @@ const page = () => {
         <Row>
           <Col lg={6}>
             <Image src={footerlogo} alt="/" />
-
             <h2>Managed by Solana Foundation</h2>
             <div className="social-link">
               <Image src={youtube} alt="/" />
