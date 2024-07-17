@@ -11,7 +11,11 @@ import buildspace4 from "../images/buildspace4.png";
 import buildspace5 from "../images/buildspace5.png";
 import buildspace6 from "../images/buildspace6.png";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-
+import shade from "../images/Ellipse-shade.png";
+import youtube from "../images/youtube-icons.png";
+import podcast from "../images/Podcast.png";
+import exchange from "../images/exchange.png";
+import { GoArrowUpRight } from "react-icons/go";
 const page = () => {
   return (
     <div className="build-page">
@@ -28,7 +32,10 @@ const page = () => {
             </p>
             <div className="build-btn">
               <button className="build-now">BUILD NOW</button>
-              <button>STACK EXCHANGE </button>
+              <button className="stack">
+                STACK EXCHANGE
+                <Image src={exchange} alt="/" />
+              </button>
             </div>
           </Col>
           <Col lg={6} className="build-page-background">
@@ -56,8 +63,6 @@ const page = () => {
                 complex programs.
               </p>
             </div>
-            <h1>Dig deeper.</h1>
-            <p>Learn from resources across the greater Solana ecosystem.</p>
           </Col>
         </Row>
         <Row className="buildspace-three-background">
@@ -149,8 +154,11 @@ const page = () => {
           </Col>
         </Row>
       </Container>
-
       <Container>
+        <div>
+          <h1>Dig deeper.</h1>
+          <p>Learn from resources across the greater Solana ecosystem.</p>
+        </div>
         <Row className="card-title">
           <Col lg={4}>
             <div className="card edit-card">
@@ -162,7 +170,7 @@ const page = () => {
                   SPL tokens, wallets and more.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
@@ -178,7 +186,7 @@ const page = () => {
                   Solana.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
@@ -193,7 +201,7 @@ const page = () => {
                   software users and developers.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
@@ -210,7 +218,7 @@ const page = () => {
                   SPL tokens, wallets and more.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
@@ -225,8 +233,11 @@ const page = () => {
                   SPL tokens, wallets and more.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
+                <div className="card-shade">
+                  <Image src={shade} alt="/" />
+                </div>
               </div>
             </div>
           </Col>
@@ -240,7 +251,7 @@ const page = () => {
                   SPL tokens, wallets and more.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
@@ -257,7 +268,7 @@ const page = () => {
                   SPL tokens, wallets and more.
                 </p>
                 <p href="#" className=" btnn-primary ">
-                  Learn more
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
@@ -271,89 +282,111 @@ const page = () => {
                   The official Solana documentation on developing, validators,
                   SPL tokens, wallets and more.
                 </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more
+                <p href="#" className="btnn-primary">
+                  Learn more <GoArrowUpRight />
                 </p>
               </div>
             </div>
           </Col>
           <Col lg={4}></Col>
         </Row>
-        <Row className="build-docs">
-          <div>
+      </Container>
+      <div className="tools-section">
+        <Container>
+          <div className="solana-tools">
             <h1>Go to the source.</h1>
             <p>Read the documentation for Solana and popular tools.</p>
           </div>
-          <Col lg={6} className="view-all-section">
-            <div className="build-solana-docs">
-              <h1>Solana Docs</h1>
-              <button>VIEW ALL</button>
-            </div>
-            <div>
-              Learn how Solana works and get a high-level understanding of
-              Solana's architecture.
-            </div>
-          </Col>
-          <Col lg={6} className="view-all-section">
-            <div className="build-solana-docs">
-              <h1>Metaplex Docs</h1>
-              <button>VIEW ALL</button>
-            </div>
-            <div>
-              Learn what you build with Metaplex, make the process of creating
-              and launching NFTs easier.
-            </div>
-          </Col>
-        </Row>
-        <Row className="change-log">
-          <Col lg={4}>
-            <h1>Solana Changelog</h1>
-            <p>
-              Some more Solana changes from Jacob & Joe. Subscribe to the
-              newsletter: https://solana.us17.list-manage.com/s... Proposal -
-              Priced Compute Units: ...
-            </p>
-            <button>LATEST EPISODE</button>
-          </Col>
-
-          <Col lg={4}>
-            <Image src={changelog} alt="/" />
-          </Col>
-        </Row>
-        <Row className="resources">
-          <Col lg={4}>
-            <h2>Solana Developer Update</h2>
-            <p>
-              Sign up to the newsletter and learn about new resources, new
-              commits, new proposals, and more.
-            </p>
-            <form>
-              <div className="form-group email-edit">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
+          <Row className="build-docs">
+            <Col lg={4} className="view-all-section">
+              <div className="build-solana-docs">
+                <h1>Solana Docs</h1>
+                <button>
+                  VIEW ALL <GoArrowUpRight />
+                </button>
               </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
-          </Col>
-          <Col lg={4} className="social-button">
-            <h2>Even more resources</h2>
-            <p>
-              More videos, more episodes. Discussions between industry leaders
-              in both blockchain and technology, our team, and community
-              developers.
-            </p>
-            <button>YOUTUBE</button>
-            <button>PODCAST</button>
-          </Col>
-        </Row>
-      </Container>
+              <div className="learn-line">
+                Learn how Solana works and get a high- <br />
+                level understanding of Solana's architecture.
+              </div>
+            </Col>
+            <Col lg={4} className="view-all-section">
+              <div className="build-solana-docs">
+                <h1>Metaplex Docs</h1>
+                <button>
+                  VIEW ALL <GoArrowUpRight />
+                </button>
+              </div>
+              <div className="learn-line">
+                Learn what you build with Metaplex, make the process <br /> of
+                creating and launching NFTs easier.
+              </div>
+            </Col>
+          </Row>
+          <Row className="change-log">
+            <Col lg={6}>
+              <h1>Solana Changelog</h1>
+              <p>
+                Some more Solana changes from Jacob & Joe. Subscribe to the
+                newsletter: https://solana.us17.list-manage.com/s... Proposal -
+                Priced Compute Units: ...
+              </p>
+              <button>LATEST EPISODE</button>
+            </Col>
+
+            <Col lg={6} className="change-log-image">
+              <Image src={changelog} alt="/" />
+            </Col>
+          </Row>
+          <Row className="resources">
+            <Col lg={6} className="resources-colum">
+              <h2>Solana Developer Update</h2>
+              <p>
+                Sign up to the newsletter and learn about new resources, new
+                commits, new proposals, and more.
+              </p>
+              <form>
+                <div className="form-group email-edit">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                  <div className="submit-button">
+                    <button type="submit" className="btn btn-primary submit">
+                      SIGN UP
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </Col>
+            <Col lg={6} className=" resources-colum ">
+              <h2>Even more resources</h2>
+              <p>
+                More videos, more episodes. Discussions between industry leaders
+                in both blockchain and technology, our team, and community
+                developers.
+              </p>
+              <div className="social-button">
+                <div>
+                  <button>
+                    YOUTUBE
+                    <Image src={youtube} alt="/" />
+                  </button>
+                </div>
+                <div>
+                  <button>
+                    PODCAST
+                    <Image src={podcast} alt="/" />
+                  </button>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

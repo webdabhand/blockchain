@@ -82,59 +82,78 @@ export default function Home() {
             <Col lg={4}>
               <h1> Made for </h1>
               <h1>mass adoption.</h1>
-              <p>LIVE DATA</p>
+              <p className="mass-section-live"> LIVE DATA</p>
             </Col>
             <Col lg={4}>
-              <h1>Fast</h1>
-              <p>
-                Don't keep your users waiting. Solana has block times of 400
-                milliseconds - and as hardware gets faster, so will the network.
-              </p>
-              <h1>3969</h1>
-              <p>TRANSACTIONS PER SECOND</p>
-              <h1>Scalable</h1>
-              <p>
-                Get big, quick. Solana is made to handle thousands of
-                transactions per second, and fees for both developers and users
-                remain less than $0.01.
-              </p>
-              <h1>169,077,581,394</h1>
-              <p>TOTAL TRANSACTIONS</p>
+              <div className="mass-section-text">
+                <h1>Fast</h1>
+                <p>
+                  Don't keep your users waiting. Solana has block times of 400
+                  milliseconds - and as hardware gets faster, so will the
+                  network.
+                </p>
+                <h2>3969</h2>
+
+                <p>TRANSACTIONS PER SECOND</p>
+              </div>
+              <div className="mass-section-text2">
+                <h1>Scalable</h1>
+                <p>
+                  Get big, quick. Solana is made to handle thousands of
+                  transactions per second, and fees for both developers and
+                  users remain less than $0.01.
+                </p>
+                <h1>169,077,581,394</h1>
+                <p>TOTAL TRANSACTIONS</p>
+              </div>
             </Col>
             <Col lg={4}>
-              <h1>Decentralized</h1>
-              <p>
-                The Solana network is validated by thousands of nodes that
-                operate independently of each other, ensuring your data remains
-                secure and censorship resistant.
-              </p>
-              <h1>1,675 </h1>
-              <p>VALIDATOR NODES</p>
-              <h1>Energy Efficient</h1>
-              <p>
-                Solana's proof of stake network and other innovations minimize
-                its impact on the
-                <span className="environment">environment.</span> Each Solana
-                transaction uses about the same energy as a few Google searches.
-              </p>
-              <h1>0%</h1>
-              <p>NET CARBON IMPACT</p>
+              <div className="Decentralized-text">
+                <h1>Decentralized</h1>
+                <p>
+                  The Solana network is validated by thousands of nodes that
+                  operate independently of each other, ensuring your data
+                  remains secure and censorship resistant.
+                </p>
+                <h2>1,675 </h2>
+                <p>VALIDATOR NODES</p>
+              </div>
+              <div className="Decentralized-text2">
+                <h1>Energy Efficient</h1>
+                <p>
+                  Solana's proof of stake network and other innovations minimize
+                  its impact on the
+                  <span className="environment">environment.</span> Each Solana
+                  transaction uses about the same energy as a few Google
+                  searches.
+                </p>
+                <h2>0%</h2>
+                <p>NET CARBON IMPACT</p>
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
       <Container>
         <Row>
-          <Col>
-            <div className="payment-mode">
+          <Col className="payment-mode">
+            <div>
+              <h1>Build for growth.</h1>
+            </div>
+            <div className="payment-mode-group">
               <div>
-                <h1>Build for growth.</h1>
+                <button className="Nft-btn">NFTs</button>
               </div>
               <div>
-                <button>NFTs</button>
                 <button>DoFi</button>
-                <button>Payment</button>
+              </div>
+              <div>
+                <button>Payments</button>
+              </div>
+              <div>
                 <button>Gaming</button>
+              </div>
+              <div>
                 <button>DAOs</button>
               </div>
             </div>
@@ -143,15 +162,15 @@ export default function Home() {
       </Container>
       <Container>
         <Row>
-          <Col lg={6}>
+          <Col lg={6} className="build-image">
             <Image src={build} alt="/build" />
           </Col>
-          <Col lg={6}>
+          <Col lg={6} className="anybodies">
             <Image src={emoji4} alt="/emoji4" />
             <p>
-              It's time to bridge the digital and physical. Anybodies helps
-              established brands like Toys'R'Us connect real-life places and
-              products with NFTs.
+              It's time to bridge the digital and physical. Anybodies <br />
+              helps established brands like Toys'R'Us connect real-life <br />
+              places and products with NFTs.
             </p>
             <span className="more-about">Learn more about NFTs on Solana</span>
           </Col>

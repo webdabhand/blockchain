@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import logo from "../images/solanaimage3.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Link from "next/link";
-const page = () => {
+
+const Page = () => {
   return (
     <div>
       <div className="header">
@@ -14,10 +14,10 @@ const page = () => {
           <Image src={logo} alt="/logo" />
         </div>
         <div>
-          <nav class="navbar navbar-expand-lg navbar-light ">
+          <nav className="navbar navbar-expand-lg navbar-light text-white ">
             <a className="navbar-brand" href="#"></a>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler text-white navbar-icon "
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -25,11 +25,11 @@ const page = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
 
             <div
-              className="collapse navbar-collapse text-white"
+              className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav mr-auto">
@@ -39,9 +39,9 @@ const page = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="/Build">
+                  <a className="nav-link" href="/Build">
                     Build
-                  </Link>
+                  </a>
                 </li>
 
                 <li className="nav-item dropdown">
@@ -109,4 +109,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
