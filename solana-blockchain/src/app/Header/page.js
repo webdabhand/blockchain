@@ -14,6 +14,7 @@ const Page = () => {
           <Image src={logo} alt="/logo" />
         </div>
         <div>
+          {" "}
           <nav className="navbar navbar-expand-lg navbar-light text-white ">
             <a className="navbar-brand" href="#"></a>
             <button
@@ -90,6 +91,9 @@ const Page = () => {
                   >
                     <a className="dropdown-item" href="#">
                       Action
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      Another action
                     </a>
                     <a className="dropdown-item" href="#">
                       Another action

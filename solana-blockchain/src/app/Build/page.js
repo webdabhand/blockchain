@@ -69,88 +69,106 @@ const page = () => {
         </Row>
         <Row className="buildspace-three-background">
           <Col>
-            <div className=" chapter-buildspacce">
-              <div className="buildspace1-image">
-                <Image src={buildspace1} alt="/" />
-              </div>
-              <div className="chapter-buildspacce-text">
-                <div>
-                  <button>14 Chapters</button>
-                  <p>Buildspace</p>
+            <div className="chapter-main-div">
+              <div className=" chapter-buildspacce">
+                <div className="buildspace1-image">
+                  <Image src={buildspace1} alt="/" />
                 </div>
-                <div>
-                  <IoArrowForwardCircleOutline className="circle-arrow" />
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className=" chapter-buildspacce">
-              <Image src={buildspace2} alt="/" />
-              <div className="chapter-buildspacce-text">
-                <div>
-                  <button>12 Chapters</button>
-                  <p>Solana Bytes</p>
-                </div>
-                <div>
-                  <IoArrowForwardCircleOutline className="circle-arrow" />
+                <div className="chapter-buildspacce-text">
+                  <div>
+                    <button>14 Chapters</button>
+                    <p>Buildspace</p>
+                  </div>
+                  <div>
+                    <IoArrowForwardCircleOutline className="circle-arrow" />
+                  </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col>
-            <div className="chapter-buildspacce">
-              <Image src={buildspace3} alt="/" />
-              <div className="chapter-buildspacce-text">
-                <div>
-                  <button>1 Chapters</button>
-                  <p> Scaffold Series</p>
-                </div>
-                <div>
-                  <IoArrowForwardCircleOutline className="circle-arrow" />
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className="chapter-buildspacce">
-              <Image src={buildspace4} alt="/" />
-              <div className="chapter-buildspacce-text">
-                <div>
-                  <button>3 Chapters</button>
-                  <p>Freecodecamp Solana Course</p>
-                </div>
-                <div>
-                  <IoArrowForwardCircleOutline className="circle-arrow" />
+            <div className="chapter-main-div">
+              <div className="chapter-main-div">
+                <div className=" chapter-buildspacce">
+                  <Image src={buildspace2} alt="/" />
+                  <div className="chapter-buildspacce-text">
+                    <div>
+                      <button>12 Chapters</button>
+                      <p>Solana Bytes</p>
+                    </div>
+                    <div>
+                      <IoArrowForwardCircleOutline className="circle-arrow" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </Col>
-          <Col>
-            <div className="chapter-buildspacce">
-              <Image src={buildspace5} alt="/" />
-              <div className="chapter-buildspacce-text ">
-                <div>
-                  <button>167 Chapters</button>
-                  <p>Solana Devlopment by Knox</p>
-                </div>
-                <div>
-                  <IoArrowForwardCircleOutline className="circle-arrow" />
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className="chapter-buildspacce">
-              <Image src={buildspace6} alt="/" />
 
-              <div className="chapter-buildspacce-text">
-                <div>
-                  <button>8 Chapters</button>
-                  <p> solana Bootcamp</p>
+          <Col>
+            <div className="chapter-main-div">
+              <div className="chapter-main-div">
+                <div className="chapter-buildspacce">
+                  <Image src={buildspace3} alt="/" />
+                  <div className="chapter-buildspacce-text">
+                    <div>
+                      <button>1 Chapters</button>
+                      <p> Scaffold Series</p>
+                    </div>
+                    <div>
+                      <IoArrowForwardCircleOutline className="circle-arrow" />
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <IoArrowForwardCircleOutline className="circle-arrow" />
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div className="chapter-main-div">
+              <div className="chapter-buildspacce">
+                <Image src={buildspace4} alt="/" />
+                <div className="chapter-buildspacce-text">
+                  <div>
+                    <button>3 Chapters</button>
+                    <p>Freecodecamp Solana Course</p>
+                  </div>
+                  <div>
+                    <IoArrowForwardCircleOutline className="circle-arrow" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+
+          <Col>
+            <div className="chapter-main-div">
+              <div className="chapter-buildspacce">
+                <Image src={buildspace5} alt="/" />
+                <div className="chapter-buildspacce-text ">
+                  <div>
+                    <button>167 Chapters</button>
+                    <p>Solana Devlopment by Knox</p>
+                  </div>
+                  <div>
+                    <IoArrowForwardCircleOutline className="circle-arrow" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div className="chapter-main-div">
+              <div className="chapter-buildspacce">
+                <Image src={buildspace6} alt="/" />
+
+                <div className="chapter-buildspacce-text">
+                  <div>
+                    <button>8 Chapters</button>
+                    <p> solana Bootcamp</p>
+                  </div>
+                  <div>
+                    <IoArrowForwardCircleOutline className="circle-arrow" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -164,129 +182,145 @@ const page = () => {
             <p>Learn from resources across the greater Solana ecosystem.</p>
           </div>
           <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Core Documentation</p>
-                <p className="card-text">
-                  The official Solana documentation on developing, validators,
-                  SPL tokens, wallets and more.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Core Documentation</p>
+                  <p className="card-text">
+                    The official Solana documentation on developing, validators,
+                    SPL tokens, wallets and more.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
           <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Solana Cookbook</p>
-                <p className="card-text">
-                  The Solana Cookbook is a developer resource that provides the
-                  essential concepts and references for building applications on
-                  Solana.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Solana Cookbook</p>
+                  <p className="card-text">
+                    The Solana Cookbook is a developer resource that provides
+                    the essential concepts and references for building
+                    applications on Solana.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
           <Col className="cards">
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Solana Stack Exchange</p>
-                <p className="card-text">
-                  Solana Stack Exchange is a question and answer site for Solana
-                  software users and developers.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Solana Stack Exchange</p>
+                  <p className="card-text">
+                    Solana Stack Exchange is a question and answer site for
+                    Solana software users and developers.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
           {/* </Row>
         <Row className="card-title"> */}
           <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Solana Playground</p>
-                <p className="card-text">
-                  The official Solana documentation on developing, validators,
-                  SPL tokens, wallets and more.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>create-solana-dapp</p>
-                <p className="card-text">
-                  The official Solana documentation on developing, validators,
-                  SPL tokens, wallets and more.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
-                <div className="card-shade">
-                  <Image src={shade} alt="/" />
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Solana Playground</p>
+                  <p className="card-text">
+                    The official Solana documentation on developing, validators,
+                    SPL tokens, wallets and more.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
                 </div>
               </div>
             </div>
           </Col>
           <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Anchor Docs</p>
-                <p className="card-text">
-                  The official Solana documentation on developing, validators,
-                  SPL tokens, wallets and more.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>create-solana-dapp</p>
+                  <p className="card-text">
+                    The official Solana documentation on developing, validators,
+                    SPL tokens, wallets and more.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                  <div className="card-shade">
+                    <Image src={shade} alt="/" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Anchor Docs</p>
+                  <p className="card-text">
+                    The official Solana documentation on developing, validators,
+                    SPL tokens, wallets and more.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
 
           <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Solana Program Library</p>
-                <p className="card-text">
-                  The official Solana documentation on developing, validators,
-                  SPL tokens, wallets and more.
-                </p>
-                <p href="#" className=" btnn-primary ">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Solana Program Library</p>
+                  <p className="card-text">
+                    The official Solana documentation on developing, validators,
+                    SPL tokens, wallets and more.
+                  </p>
+                  <p href="#" className=" btnn-primary ">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
           <Col>
-            <div className="card edit-card">
-              <div className="card-body">
-                <p className="card-titles">TOOL / LIBRTARY</p>
-                <p>Program Examples</p>
-                <p className="card-text">
-                  The official Solana documentation on developing, validators,
-                  SPL tokens, wallets and more.
-                </p>
-                <p href="#" className="btnn-primary">
-                  Learn more <GoArrowUpRight className="arrow-right" />
-                </p>
+            <div className="chapter-main-div">
+              <div className="card edit-card">
+                <div className="card-body">
+                  <p className="card-titles">TOOL / LIBRTARY</p>
+                  <p>Program Examples</p>
+                  <p className="card-text">
+                    The official Solana documentation on developing, validators,
+                    SPL tokens, wallets and more.
+                  </p>
+                  <p href="#" className="btnn-primary">
+                    Learn more <GoArrowUpRight className="arrow-right" />
+                  </p>
+                </div>
               </div>
             </div>
           </Col>

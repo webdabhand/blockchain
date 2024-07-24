@@ -34,7 +34,7 @@ export default function Home() {
                 Fast for everyone.
               </h6>
               <p>
-                Bring blockchain to the people. Solana supports experiences{" "}
+                Bring blockchain to the people. Solana supports experiences
                 <br />
                 for power users, new consumers, and everyone in between
               </p>
@@ -188,38 +188,41 @@ export default function Home() {
         </div>
       </Container>
 
-      <div className="community">
-        <div>
+      <div>
+        <div className="community">
           <div>
-            <Image src={frame} alt="/" />
+            <div>
+              <Image src={frame} alt="/" />
+            </div>
+            <div>
+              <Image src={frame1} alt="/" />
+            </div>
           </div>
           <div>
-            <Image src={frame1} alt="/" />
-          </div>
-        </div>
-        <div>
-          <Image src={frame2} alt="/" />
-        </div>
-        <div>
-          <div>
-            <Image src={frame3} alt="/" />
+            <Image src={frame2} alt="/" />
           </div>
           <div>
-            <Image src={frame4} alt="/" />
-          </div>
-        </div>
-        <div>
-          <Image src={frame5} alt="/" />
-        </div>
-        <div>
-          <div>
-            <Image src={frame6} alt="/" />
+            <div>
+              <Image src={frame3} alt="/" />
+            </div>
+            <div>
+              <Image src={frame4} alt="/" />
+            </div>
           </div>
           <div>
-            <Image src={frame7} alt="/" />
+            <Image src={frame5} alt="/" />
+          </div>
+          <div>
+            <div>
+              <Image src={frame6} alt="/" />
+            </div>
+            <div>
+              <Image src={frame7} alt="/" />
+            </div>
           </div>
         </div>
       </div>
+
       <Container>
         <Row>
           <Col className="start-building">
