@@ -21,28 +21,41 @@ import frame4 from "../app/images/Frame4.png";
 import frame5 from "../app/images/Frame5.png";
 import frame6 from "../app/images/Frame6.png";
 import frame7 from "../app/images/Frame7.png";
-
+import background from "../app/images/solana-background3.png";
 export default function Home() {
   return (
     <div className="main-page-background">
+      <div>
+        <div className="background-img-left">
+          <Image src={background} alt="/background" />
+        </div>
+
+        <div className="background-img-right"></div>
+        <Container>
+          <Row>
+            <Col>
+              <div className="main-page-contant">
+                <h6>
+                  Powerful for developers <br />
+                  Fast for everyone.
+                </h6>
+                <p>
+                  Bring blockchain to the people. Solana supports experiences
+                  <br />
+                  for power users, new consumers, and everyone in between
+                </p>
+              </div>
+              <div className="main-page-button">
+                <button className="start-button"> START BUILDING</button>
+                <button className="read-button">READ DOCS</button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <Container>
         <Row>
           <Col>
-            <div className="main-page-contant">
-              <h6>
-                Powerful for developers <br />
-                Fast for everyone.
-              </h6>
-              <p>
-                Bring blockchain to the people. Solana supports experiences
-                <br />
-                for power users, new consumers, and everyone in between
-              </p>
-            </div>
-            <div className="main-page-button">
-              <button className="start-button"> START BUILDING</button>
-              <button className="read-button">READ DOCS</button>
-            </div>
             <div className="tools-heading">
               <p>
                 Powering tools and integrations from companies all around the
@@ -76,6 +89,7 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+
       <div className="mass-section">
         <Container>
           <Row>
@@ -93,7 +107,6 @@ export default function Home() {
                   network.
                 </p>
                 <h2>3969</h2>
-
                 <p>TRANSACTIONS PER SECOND</p>
               </div>
               <div className="mass-section-text2">

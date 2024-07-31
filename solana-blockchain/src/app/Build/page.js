@@ -11,7 +11,7 @@ import buildspace4 from "../images/buildspace4.png";
 import buildspace5 from "../images/buildspace5.png";
 import buildspace6 from "../images/buildspace6.png";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import shade from "../images/Ellipse-shade.png";
+// import shade from "../images/Ellipse-shade.png";
 import youtube from "../images/youtube-icons.png";
 import podcast from "../images/Podcast.png";
 import exchange from "../images/exchange.png";
@@ -104,7 +104,6 @@ const page = () => {
               </div>
             </div>
           </Col>
-
           <Col>
             <div className="chapter-main-div">
               <div className="chapter-main-div">
@@ -139,7 +138,6 @@ const page = () => {
               </div>
             </div>
           </Col>
-
           <Col>
             <div className="chapter-main-div">
               <div className="chapter-buildspacce">
@@ -176,11 +174,11 @@ const page = () => {
         </Row>
       </Container>
       <Container>
+        <div>
+          <h1>Dig deeper.</h1>
+          <p>Learn from resources across the greater Solana ecosystem.</p>
+        </div>
         <Row className="card-title buildspace-three-background">
-          <div>
-            <h1>Dig deeper.</h1>
-            <p>Learn from resources across the greater Solana ecosystem.</p>
-          </div>
           <Col>
             <div className="chapter-main-div">
               <div className="card edit-card">
@@ -265,9 +263,6 @@ const page = () => {
                   <p href="#" className=" btnn-primary ">
                     Learn more <GoArrowUpRight className="arrow-right" />
                   </p>
-                  <div className="card-shade">
-                    <Image src={shade} alt="/" />
-                  </div>
                 </div>
               </div>
             </div>
