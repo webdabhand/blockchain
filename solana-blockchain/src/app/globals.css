@@ -572,6 +572,12 @@ input::placeholder {
   justify-content: center;
 } */
 
+@media (max-width: 1440px) {
+  .community img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1024px) {
   .card-blank-col {
     display: none;

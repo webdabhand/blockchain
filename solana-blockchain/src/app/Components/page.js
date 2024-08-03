@@ -5,7 +5,7 @@ import frame2 from "../images/Frame2.png";
 import frame3 from "../images/Frame3.png";
 
 const BootstrapSlider = () => {
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
 

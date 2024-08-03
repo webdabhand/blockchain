@@ -200,7 +200,6 @@ export default function Home() {
           <p>Join a thriving community</p>
         </div>
       </Container>
-
       <div>
         <div className="community">
           <div>
