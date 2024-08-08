@@ -214,7 +214,7 @@ const page = () => {
               </div>
             </div>
           </Col>
-          <Col className="cards">
+          <Col className="cards"> 
             <div className="chapter-main-div">
               <div className="card edit-card">
                 <div className="card-body">

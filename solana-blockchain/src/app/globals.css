@@ -26,9 +26,8 @@ body {
 }
 .main-page-contant {
   text-align: center;
-  /* color: white; */
-  /* background-image: url(../app/images/solanaimage1.png); */
-
+  color: white;
+  background-image: url(../app/images/solanaimage1.png);
   padding-top: 50px;
 }
 .main-page-background {
@@ -47,6 +46,10 @@ body {
   padding: 100px 0;
   justify-content: center;
   gap: 15px;
+}
+.back-ground-circle {
+  display: flex;
+  justify-content: space-around;
 }
 .start-button {
   padding: 20px;
@@ -812,56 +815,68 @@ input::placeholder {
   }
 }
 
-/* <<<<<<-------->>>>>>> */
+/* <<<------>>>>>> */
 
-.navbar-nav > li > a {
-  text-transform: uppercase;
-  font-size: 12px;
-  margin-right: 20px;
-  color: #fff;
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.navbar-toggler {
-  padding: 0.2rem 0.5rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid white;
+.navItem {
+  float: left;
 }
 
-.nav-link {
-  color: #fff !important;
+.navItem a,
+.dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.wrapper {
-  width: 100%;
+.dropdown:hover .dropbtn {
+  color: rgb(255, 255, 255);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
   position: absolute;
-  height: 100%;
-  background-color: #000;
-  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
-  transition: 1s all;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.navbar-brand {
-  color: #fff;
-  font-family: "Allerta Stencil", sans-serif;
-  margin-bottom: 4px;
-  font-size: 27px;
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.navbar-red:hover .wrapper {
-  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+.dropdownContent a:hover {
+  background-color: #f1f1f1;
 }
 
-.navbar-brand:hover {
-  color: #fff;
+.dropdown:hover .dropdownContent {
+  display: block;
 }
-
-.navbar-red {
-  background-color: red;
-  color: #fff;
+.dropdown {
+  background-color: #000000 !important;
 }
-
-.all-show {
-  z-index: 10;
+.dropbtn {
+  background-color: #2e293352;
+  color: white;
+  border: unset;
+  text-align: center;
+  padding: 14px 16px;
 }

@@ -26,11 +26,14 @@ export default function Home() {
   return (
     <div className="main-page-background">
       <div>
-        <div className="background-img-left">
-          <Image src={background} alt="/background" />
-        </div>
-
-        <div className="background-img-right"></div>
+        {/* <div className="back-ground-circle">
+          <div className="background-img-left">
+            <Image src={background} alt="/background" />
+          </div>
+          <div className="background-img-left">
+            <Image src={background} alt="/background" />
+          </div>    
+        </div> */}
         <Container>
           <Row>
             <Col>
@@ -89,7 +92,6 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-
       <div className="mass-section">
         <Container>
           <Row>
