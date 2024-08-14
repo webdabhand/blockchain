@@ -36,14 +36,12 @@ const page = () => {
               <p>Careers</p>
               <p>Disclaimer</p>
             </div>
-
             <div>
               <h2>GET CONNEXTED</h2>
               <p>Ecosystem</p>
               <p>Blog</p>
               <p>newsletter</p>
             </div>
-
             <div className="en-logo">
               <div>
                 <Image src={enlogo} alt="/" />

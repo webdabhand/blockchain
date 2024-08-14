@@ -1,184 +1,94 @@
-// import React from "react";
-// import Image from "next/image";
-// import logo from "../images/solanaimage3.png";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import Navbar from "../Navbar/page.js";
-// import Link from "next/link";
-
-// const Page = () => {
-//   return (
-//     <div>
-//       <div className="header">
-//         Breakpoint 2023 - New City. New Vibes - Get Early Access -
-//       </div>
-//       <div className="header-navbar">
-//         <Image src={logo} alt="/logo" />
-
-//         <nav className="navbar navbar-expand-lg navbar-light text-white ">
-//           <a className="navbar-brand" href="#"></a>
-//           <button
-//             className="navbar-toggler text-white navbar-icon "
-//             type="button"
-//             data-toggle="collapse"
-//             data-target="#navbarSupportedContent"
-//             aria-controls="navbarSupportedContent"
-//             aria-expanded="false"
-//             aria-label="Toggle navigation"
-//           >
-//             <span className="navbar-toggler-icon " />
-//           </button>
-
-//           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-//             <ul className="navbar-nav mr-auto">
-//               <li className="nav-item active">
-//                 <a className="nav-link" href="#">
-//                   Learn
-//                 </a>
-//               </li>
-//               <li className="nav-item">
-//                 <a className="nav-link" href="/Build">
-//                   Build
-//                 </a>
-//               </li>
-
-//               <li className="nav-item dropdown">
-//                 <a
-//                   className="nav-link dropdown-toggle"
-//                   href="#"
-//                   id="navbarDropdown"
-//                   role="button"
-//                   data-toggle="dropdown"
-//                   aria-haspopup="true"
-//                   aria-expanded="false"
-//                 >
-//                   Network
-//                 </a>
-//                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-//                   <a className="dropdown-item" href="#">
-//                     Action
-//                   </a>
-//                   <a className="dropdown-item" href="#">
-//                     Another action
-//                   </a>
-//                   <div className="dropdown-divider"></div>
-//                   <a className="dropdown-item" href="#">
-//                     Something else here
-//                   </a>
-//                 </div>
-//               </li>
-
-//               <li className="nav-item dropdown">
-//                 <a
-//                   className="nav-link dropdown-toggle"
-//                   href="#"
-//                   id="navbarDropdown"
-//                   role="button"
-//                   data-toggle="dropdown"
-//                   aria-haspopup="true"
-//                   aria-expanded="false"
-//                 >
-//                   Community
-//                 </a>
-//                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-//                   <a className="dropdown-item" href="#">
-//                     Action
-//                   </a>
-//                   <a className="dropdown-item" href="#">
-//                     Another action
-//                   </a>
-//                   <a className="dropdown-item" href="#">
-//                     Another action
-//                   </a>
-//                   <div className="dropdown-divider"></div>
-//                   <a className="dropdown-item" href="#">
-//                     Something else here
-//                   </a>
-//                 </div>
-//               </li>
-//             </ul>
-//           </div>
-//         </nav>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Page;
-
 "use client";
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Link from "next/link";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import Image from "next/image";
 import logo from "../images/solanaimage3.png";
-import { IoIosArrowDown } from "react-icons/io";
-import Link from "next/link";
 
 const page = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div>
       <div className="header">
         Breakpoint 2023 - New City. New Vibes - Get Early Access -
       </div>
-      <div className="header-navbar">
-        <Image src={logo} alt="/logo" />{" "}
-        <nav className="navbar">
-          <ul className="navList">
-            <li className="navItem">
-              <div className="dropdown">
-                <Link className="dropbtn" href="/">
-                  Learn
-                </Link>
-              </div>
-            </li>
-            <li className="navItem">
-              <div className="dropdown">
-                <Link href="/Build" className="dropbtn">
+      <div className="header-navbar">  
+        <Image src={logo} alt="/logo" />
+        <Navbar
+          expanded={expanded}
+          expand="lg"
+          variant="dark"
+          sticky="top"
+          className="shadow-sm"
+        >
+          <Container>
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              onClick={() => setExpanded(expanded ? false : true)}
+            />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link as={Link} href="/" onClick={() => setExpanded(false)}>
+                  Home
+                </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  href="/Build"
+                  onClick={() => setExpanded(false)}
+                >
                   Build
-                </Link>
-              </div>
-            </li>
-            <li className="navItem">
-              <div className="dropdown">
-                <Link href="" onClick={toggleDropdown} className="dropbtn">
-                  Network
-                  <IoIosArrowDown />
-                </Link>
-                {dropdownOpen && (
-                  <div className="dropdownContent">
-                    <Link href="/services/web-development">Action</Link>
-                    <Link href="/services/mobile-development">
-                      Mobile Development
-                    </Link>
-                    <Link href="/services/seo">SEO</Link>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="navItem">
-              <div className="dropdown">
-                <button onClick={toggleDropdown} className="dropbtn">
-                  Community
-                  <IoIosArrowDown />
-                </button>
-                {dropdownOpen && (
-                  <div className="dropdownContent">
-                    <Link href="/services/web-development">Action</Link>
-                    <Link href="/services/mobile-development">
-                      Another action
-                    </Link>
-                    <Link href="/services/seo"> Something else here</Link>
-                  </div>
-                )}
-              </div>
-            </li>
-          </ul>
-        </nav>
+                </Nav.Link>
+                <NavDropdown title="   Network" id="basic-nav-dropdown">
+                  <NavDropdown.Item
+                    as={Link}
+                    href="/services/web-development"
+                    onClick={() => setExpanded(false)}
+                  >
+                    Web Development
+                  </NavDropdown.Item> 
+                  <NavDropdown.Item
+                    as={Link}
+                    href="/services/mobile-development"
+                    onClick={() => setExpanded(false)}
+                  >
+                    Mobile Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    href="/services/seo"
+                    onClick={() => setExpanded(false)}
+                  >
+                    SEO
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Community" id="basic-nav-dropdown">
+                  <NavDropdown.Item
+                    as={Link}
+                    href="/services/web-development"
+                    onClick={() => setExpanded(false)}
+                  >
+                    Web Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    href="/services/mobile-development"
+                    onClick={() => setExpanded(false)}
+                  >
+                    Mobile Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    href="/services/seo"
+                    onClick={() => setExpanded(false)}
+                  >
+                    SEO
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </div>
     </div>
   );

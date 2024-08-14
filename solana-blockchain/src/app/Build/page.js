@@ -11,7 +11,6 @@ import buildspace4 from "../images/buildspace4.png";
 import buildspace5 from "../images/buildspace5.png";
 import buildspace6 from "../images/buildspace6.png";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-// import shade from "../images/Ellipse-shade.png";
 import youtube from "../images/youtube-icons.png";
 import podcast from "../images/Podcast.png";
 import exchange from "../images/exchange.png";
@@ -68,33 +67,17 @@ const page = () => {
           </Col>
         </Row>
         <Row className="buildspace-three-background">
-          <Col>
-            <div className="chapter-main-div">
-              <div className=" chapter-buildspacce">
-                <div className="buildspace1-image">
-                  <Image src={buildspace1} alt="/" />
-                </div>
-                <div className="chapter-buildspacce-text">
-                  <div>
-                    <button>14 Chapters</button>
-                    <p>Buildspace</p>
-                  </div>
-                  <div>
-                    <IoArrowForwardCircleOutline className="circle-arrow" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className="chapter-main-div">
+          <div className="image-card">
+            <Col>
               <div className="chapter-main-div">
                 <div className=" chapter-buildspacce">
-                  <Image src={buildspace2} alt="/" />
+                  <div className="buildspace1-image">
+                    <Image src={buildspace1} alt="/" />
+                  </div>
                   <div className="chapter-buildspacce-text">
                     <div>
-                      <button>12 Chapters</button>
-                      <p>Solana Bytes</p>
+                      <button>14 Chapters</button>
+                      <p>Buildspace</p>
                     </div>
                     <div>
                       <IoArrowForwardCircleOutline className="circle-arrow" />
@@ -102,26 +85,44 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </Col>
-          <Col>
-            <div className="chapter-main-div">
+            </Col>
+            <Col>
               <div className="chapter-main-div">
-                <div className="chapter-buildspacce">
-                  <Image src={buildspace3} alt="/" />
-                  <div className="chapter-buildspacce-text">
-                    <div>
-                      <button>1 Chapters</button>
-                      <p> Scaffold Series</p>
-                    </div>
-                    <div>
-                      <IoArrowForwardCircleOutline className="circle-arrow" />
+                <div className="chapter-main-div">
+                  <div className=" chapter-buildspacce">
+                    <Image src={buildspace2} alt="/" />
+                    <div className="chapter-buildspacce-text">
+                      <div>
+                        <button>12 Chapters</button>
+                        <p>Solana Bytes</p>
+                      </div>
+                      <div>
+                        <IoArrowForwardCircleOutline className="circle-arrow" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Col>
+            </Col>
+            <Col>
+              <div className="chapter-main-div">
+                <div className="chapter-main-div">
+                  <div className="chapter-buildspacce">
+                    <Image src={buildspace3} alt="/" />
+                    <div className="chapter-buildspacce-text">
+                      <div>
+                        <button>1 Chapters</button>
+                        <p> Scaffold Series</p>
+                      </div>
+                      <div>
+                        <IoArrowForwardCircleOutline className="circle-arrow" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </div>
           <Col>
             <div className="chapter-main-div">
               <div className="chapter-buildspacce">
@@ -158,7 +159,6 @@ const page = () => {
             <div className="chapter-main-div">
               <div className="chapter-buildspacce">
                 <Image src={buildspace6} alt="/" />
-
                 <div className="chapter-buildspacce-text">
                   <div>
                     <button>8 Chapters</button>
@@ -214,7 +214,7 @@ const page = () => {
               </div>
             </div>
           </Col>
-          <Col className="cards"> 
+          <Col className="cards">
             <div className="chapter-main-div">
               <div className="card edit-card">
                 <div className="card-body">
@@ -231,8 +231,6 @@ const page = () => {
               </div>
             </div>
           </Col>
-          {/* </Row>
-        <Row className="card-title"> */}
           <Col>
             <div className="chapter-main-div">
               <div className="card edit-card">

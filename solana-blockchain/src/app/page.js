@@ -21,19 +21,10 @@ import frame4 from "../app/images/Frame4.png";
 import frame5 from "../app/images/Frame5.png";
 import frame6 from "../app/images/Frame6.png";
 import frame7 from "../app/images/Frame7.png";
-import background from "../app/images/solana-background3.png";
 export default function Home() {
   return (
-    <div className="main-page-background">
-      <div>
-        {/* <div className="back-ground-circle">
-          <div className="background-img-left">
-            <Image src={background} alt="/background" />
-          </div>
-          <div className="background-img-left">
-            <Image src={background} alt="/background" />
-          </div>    
-        </div> */}
+    <div className="main-page-background ">
+      <div className="banner-background ">
         <Container>
           <Row>
             <Col>
@@ -52,6 +43,7 @@ export default function Home() {
                 <button className="start-button"> START BUILDING</button>
                 <button className="read-button">READ DOCS</button>
               </div>
+              <div className="banner-backgroun"></div>
             </Col>
           </Row>
         </Container>

@@ -1,12 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"); */
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: black;
 }
 
 .header-navbar {
@@ -27,8 +23,7 @@ body {
 .main-page-contant {
   text-align: center;
   color: white;
-  background-image: url(../app/images/solanaimage1.png);
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .main-page-background {
   background-color: black;
@@ -112,27 +107,37 @@ body {
   color: #19fb9b;
   padding-left: 5px;
 }
-.background-img-left {
+/* .background-img-left {
   background-image: url(../app/images/solana-background3.png);
   background-position: left;
   background-repeat: no-repeat;
   position: relative;
   z-index: 9;
-}
+} */
 .background-img-left img {
   background-position: center;
   height: 250px;
   width: 100%;
 }
-.background-img-right {
+.banner-background {
   background-image: url(../app/images/solanaimage2.png);
-}
-.mass-section {
-  background-image: url(../app/images/mass-section-image.png);
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   padding: auto;
 }
+
+.banner-backgroun {
+  background-image: url(../app/images/solanaimage1.png);
+  background-position: rig;
+  background-repeat: no-repeat;
+  padding: auto;
+}
+/* .mass-section {
+  background-image: url(../app/images/mass-section-image.png);
+  background-position: center;
+  background-repeat: no-repeat; 
+  padding: auto;
+} */
 .mass-section-text {
   background-color: #000508;
   padding: 30px;
@@ -322,6 +327,9 @@ body {
   padding: 10px;
   border-radius: 40px;
 }
+.images-card {
+  display: flex;
+}
 .stack {
   background-color: unset;
   border: 1px solid gray;
@@ -376,7 +384,6 @@ body {
   font-size: 15px;
 }
 .edit-card {
-  /* background-image: url(../app/images/design.png); */
   height: 250px !important;
   width: 346px;
   border-radius: 18px;
@@ -476,19 +483,6 @@ body {
   gap: 20px;
   padding-top: 20px;
 }
-
-/* .buildspace-three button {
-  padding: 0 10px;
-  border-radius: 40px;
-  border: unset;
-  background-color: #8c01fa;
-  color: white;
-  font-size: 11px;
-}
-.buildspace-three p {
-  font-size: 28px;
-  font-weight: 200;
-} */
 .chapter-buildspacce {
   position: relative;
   width: 347px;
@@ -570,10 +564,6 @@ input::placeholder {
 .build-solana-docs p {
   font-size: 15px;
 }
-/* .one-two image {
-  display: flex;
-  justify-content: center;
-} */
 
 @media (max-width: 1440px) {
   .community img {
@@ -614,6 +604,16 @@ input::placeholder {
   .collapse {
     display: block;
   }
+  /* .card-tool {
+    display: flex;
+    gap: 10px;
+  }
+  .build-solana-docs {
+    display: block;
+  }
+  .tools-section {
+    margin-top: 15px;
+  } */
   .company-patner {
     display: flex;
     flex-wrap: wrap;
@@ -635,10 +635,7 @@ input::placeholder {
   .community {
     display: none !important;
   }
-  .navbar-toggler {
-    color: white !important;
-    background-color: white !important;
-  }
+
   .nav-link {
     color: white !important;
   }
@@ -660,15 +657,22 @@ input::placeholder {
   .millions {
     padding: 50px 0;
   }
-  .chapter-buildspacce img {
+  /* .chapter-buildspacce img {
     width: 198%;
-  }
+  } */
   .chapter-main-div {
     display: unset;
   }
-  .chapter-buildspacce-text {
+  /* .chapter-buildspacce-text {
     width: 198%;
+  } */
+  /* .pic-cards {
+    display: flex;
+    gap: 10px;
   }
+  .headline-card {
+    margin-top: 10px;
+  } */
 }
 .about-home-build:hover {
   color: #14f195;
@@ -813,70 +817,4 @@ input::placeholder {
   .start-building {
     padding: 25px 0;
   }
-}
-
-/* <<<------>>>>>> */
-
-.navList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navItem {
-  float: left;
-}
-
-.navItem a,
-.dropbtn {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown:hover .dropbtn {
-  color: rgb(255, 255, 255);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdownContent a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdownContent a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdownContent {
-  display: block;
-}
-.dropdown {
-  background-color: #000000 !important;
-}
-.dropbtn {
-  background-color: #2e293352;
-  color: white;
-  border: unset;
-  text-align: center;
-  padding: 14px 16px;
 }
